@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Assets">
+        <file alias="flower.png">Assets/flower.png</file>
+        <file alias="taskbar.png">Assets/taskbar.png</file>
+    </qresource>
+    <qresource prefix="/Fonts">
+        <file alias="merlo.ttf">Fonts/merlo-regular.ttf</file>
+    </qresource>
+</RCC>
