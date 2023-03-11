@@ -35,6 +35,7 @@ Window {
             visible: true
             anchors.fill: parent
 
+            //TODO:  Change text color to white slim
             Row {
                 id: topRow
                 width: parent.width
@@ -54,48 +55,59 @@ Window {
                         width: parent.width * 19.6 / 100
                         color: "transparent"
 
-                        Button {
+                        //TODO: Return Date auto updating on backend C++ side
+                        Rectangle {
                             id: date1
                             width: date1.height
+                            height: parent.height / 1.5
                             anchors.centerIn: parent
-                            text: "4"
-                            font.pointSize: 50
-                            font.family: "Merlo-Regular ☞"
-                            background: Rectangle {
-                                color: "#333333"
-                                border.width: 1
-                                border.color: "#607080"
-                                radius: 100
+                            color: "#333333"
+                            border.width: 1
+                            border.color: "#607080"
+                            radius: 100
+                            Text {
+                                text: "4"
+                                font.pointSize: 50
+                                font.family: "Merlo-Regular ☞"
+                                anchors.centerIn: parent
                             }
-                            onClicked: {
-                                /* Handle button click event here */
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    date1.color = "#FFF"
+                                }
                             }
                         }
+
                     }
 
-                    Rectangle{
+                    Rectangle {
                         id: yesterdayRect
                         height: parent.height
                         width: parent.width * 16.6 / 100
                         color: "transparent"
                         x: dayBeforeyesterdayRect.width
 
-
-                        Button {
+                        Rectangle {
                             id: date2
                             width: date2.height
+                            height: parent.height / 1.5
                             anchors.centerIn: parent
-                            text: "5"
-                            font.pointSize: 50
-                            font.family: "Merlo-Regular ☞"
-                            background: Rectangle {
-                                color: "#333333"
-                                border.width: 1
-                                border.color: "#607080"
-                                radius: 100
+                            color: "#333333"
+                            border.width: 1
+                            border.color: "#607080"
+                            radius: 100
+                            Text {
+                                text: "5"
+                                font.pointSize: 50
+                                font.family: "Merlo-Regular ☞"
+                                anchors.centerIn: parent
                             }
-                            onClicked: {
-                                /* Handle button click event here */
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    /* Handle mouse click event here */
+                                }
                             }
                         }
                     }
@@ -107,21 +119,26 @@ Window {
                         color: "transparent"
                         x: yesterdayRect.x + yesterdayRect.width
 
-                        Button {
+                        Rectangle {
                             id: date3
                             width: date3.height
+                            height: parent.height / 1.5
                             anchors.centerIn: parent
-                            text: "6"
-                            font.pointSize: 50
-                            font.family: "Merlo-Regular ☞"
-                            background: Rectangle {
-                                color: "#333333"
-                                border.width: 1
-                                border.color: "#607080"
-                                radius: 100
+                            color: "#333333"
+                            border.width: 1
+                            border.color: "#607080"
+                            radius: 100
+                            Text {
+                                text: "6"
+                                font.pointSize: 50
+                                font.family: "Merlo-Regular ☞"
+                                anchors.centerIn: parent
                             }
-                            onClicked: {
-                                /* Handle button click event here */
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    /* Handle mouse click event here */
+                                }
                             }
                         }
                     }
@@ -133,21 +150,26 @@ Window {
                         color: "transparent"
                         x: todayRect.x + todayRect.width
 
-                        Button {
+                        Rectangle {
                             id: date4
                             width: date4.height
+                            height: parent.height / 1.5
                             anchors.centerIn: parent
-                            text: "7"
-                            font.pointSize: 50
-                            font.family: "Merlo-Regular ☞"
-                            background: Rectangle {
-                                color: "#333333"
-                                border.width: 1
-                                border.color: "#607080"
-                                radius: 100
+                            color: "#333333"
+                            border.width: 1
+                            border.color: "#607080"
+                            radius: 100
+                            Text {
+                                text: "7"
+                                font.pointSize: 50
+                                font.family: "Merlo-Regular ☞"
+                                anchors.centerIn: parent
                             }
-                            onClicked: {
-                                /* Handle button click event here */
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    /* Handle mouse click event here */
+                                }
                             }
                         }
                     }
@@ -159,21 +181,26 @@ Window {
                         color: "transparent"
                         x: tomorrowRect.x + tomorrowRect.width
 
-                        Button {
+                        Rectangle {
                             id: date5
                             width: date5.height
+                            height: parent.height / 1.5
                             anchors.centerIn: parent
-                            text: "8"
-                            font.pointSize: 50
-                            font.family: "Merlo-Regular ☞"
-                            background: Rectangle {
-                                color: "#333333"
-                                border.width: 1
-                                border.color: "#607080"
-                                radius: 100
+                            color: "#333333"
+                            border.width: 1
+                            border.color: "#607080"
+                            radius: 100
+                            Text {
+                                text: "8"
+                                font.pointSize: 50
+                                font.family: "Merlo-Regular ☞"
+                                anchors.centerIn: parent
                             }
-                            onClicked: {
-                                /* Handle button click event here */
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    /* Handle mouse click event here */
+                                }
                             }
                         }
                     }
@@ -185,21 +212,26 @@ Window {
                         color: "transparent"
                         x: dayAftertomorrowRect.x + dayAftertomorrowRect.width
 
-                        Button {
+                        Rectangle {
                             id: date6
                             width: date6.height
+                            height: parent.height / 1.5
                             anchors.centerIn: parent
-                            text: "9"
-                            font.pointSize: 50
-                            font.family: "Merlo-Regular ☞"
-                            background: Rectangle {
-                                color: "#333333"
-                                border.width: 1
-                                border.color: "#607080"
-                                radius: 100
+                            color: "#333333"
+                            border.width: 1
+                            border.color: "#607080"
+                            radius: 100
+                            Text {
+                                text: "9"
+                                font.pointSize: 50
+                                font.family: "Merlo-Regular ☞"
+                                anchors.centerIn: parent
                             }
-                            onClicked: {
-                                /* Handle button click event here */
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    /* Handle mouse click event here */
+                                }
                             }
                         }
                     }
@@ -245,6 +277,17 @@ Window {
                         opacity: 1
 
                         Rectangle {
+                            id: whiteDelimeterTopRect
+                            x: parent.width / 1.75
+                            y: 10
+                            width: 2
+                            height: parent.height - 15
+                            color: "white"
+                            opacity: 0.2
+                            z: 3
+                        }
+
+                        Rectangle {
                             id: upperSectionTopRect
                             height: parent.height * 0.17
                             width: parent.width * 0.98
@@ -256,12 +299,6 @@ Window {
                             x: leftMarginSectionTopRect.width
                             y: 10
                             z: 1
-
-                            Text {
-                                color: "red"
-                                text: "TOPTOPTOP"
-                                anchors.centerIn: parent
-                            }
                         }
 
                         Rectangle {
@@ -273,12 +310,6 @@ Window {
                             x: leftMarginSectionTopRect.width
                             y: upperSectionTopRect.height
                             z: 2
-
-                            Text {
-                                color: "red"
-                                text: "TOPTOPTOP"
-                                anchors.centerIn: parent
-                            }
                         }
 
                         Rectangle {
@@ -293,12 +324,6 @@ Window {
                             x: leftMarginSectionTopRect.width
                             y: (upperSectionTopRect.height + middleSectionTopRect.height) - 10
                             z: 1
-
-                            Text {
-                                color: "red"
-                                text: "TOPTOPTOP"
-                                anchors.centerIn: parent
-                            }
                         }
                     }
                 }
@@ -356,8 +381,11 @@ Window {
                                 anchors.centerIn: parent
 
                                 Text {
-                                    color: "red"
-                                    text: "Middle+"
+                                    color: "White"
+                                    font.pixelSize: 30
+                                    font.bold: true
+                                    font.family: "Merlo-Regular"
+                                    text: "Lorem"
                                     anchors.centerIn: parent
                                 }
                             }
@@ -366,15 +394,24 @@ Window {
                         Rectangle {
                         id: bottomMidSideRect
                         height: parent.height * 0.88
-                        width: parent.width * 0.92
+                        width: parent.width * 0.97
                         color: "#282929"
                         opacity: 1
                         x: 10
                         y: upperMidSideRectWrapper.height
+                        border.color: "#282929"
+                        border.width: 50
+                        radius: 10
 
                             Text {
-                                color: "red"
-                                text: "Middle+"
+                                width: parent.width
+                                height: parent.height
+                                color: "white"
+                                font.pixelSize: 20
+                                font.family: "Merlo-Regular"
+                                clip: true
+                                text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit lectus vel magna malesuada, et elementum dolor euismod. Integer id velit vestibulum, tempus justo eget, malesuada lorem. Donec feugiat tortor eget ultrices congue. Phasellus mollis massa et elit tincidunt lobortis. Curabitur quis sagittis ipsum. Donec eleifend, ante in lobortis rutrum, eros velit ullamcorper massa, at rutrum tortor enim eget dui. Donec sed libero vel orci pretium pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit lectus vel magna malesuada, et elementum dolor euismod. Integer id velit vestibulum, tempus justo eget, malesuada lorem. Donec feugiat tortor eget ultrices congue. Phasellus mollis massa et elit tincidunt lobortis. Curabitur quis sagittis ipsum. Donec eleifend, ante in Curabitur quis sagittis ipsum. Donec eleifend, ante in Curabitur quis sagittis ipsum. Donec eleifend, ante in Curabitur"
+                                wrapMode: Text.WrapAnywhere
                                 anchors.centerIn: parent
                             }
                         }
@@ -398,8 +435,9 @@ Window {
 
                         Text {
                             text: "MotivationTextBlock"
-                            font.family: "Arial"
-                            font.pixelSize: 24
+                            font.family: "Merlo-Regular"
+                            font.bold: true
+                            font.pixelSize: 20
                             color: "white"
                             anchors.centerIn: parent
                         }
@@ -415,8 +453,9 @@ Window {
 
                         Text {
                             text: "WINIIN"
-                            font.family: "Arial"
-                            font.pixelSize: 24
+                            font.family: "Merlo-Regular"
+                            font.pixelSize: 50
+                            font.letterSpacing: 5
                             color: "white"
                             anchors.centerIn: parent
                         }
